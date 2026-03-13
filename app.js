@@ -78,9 +78,9 @@ showResult(steps,yp)
 
 function showResult(steps,answer){
 
-let newPage=window.open("","_blank")
+let resultWindow=window.open("","_blank")
 
-newPage.document.write(`
+resultWindow.document.write(`
 
 <html>
 
@@ -91,14 +91,14 @@ newPage.document.write(`
 
 <body class="resultPage">
 
-<h1>Lagrange Interpolation Result</h1>
+<h1>Lagrange Interpolation Calculation</h1>
 
 <h2>Iteration Steps</h2>
 
 ${steps}
 
 <div class="final">
-Final Interpolated Value = ${answer}
+Final Interpolated Value = ${answer.toFixed(6)}
 </div>
 
 </body>
