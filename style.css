@@ -1,42 +1,86 @@
 body{
-    font-family: Arial;
-    background: #f2f2f2;
-    text-align: center;
+font-family: 'Segoe UI', Tahoma, sans-serif;
+background: linear-gradient(135deg,#1f4037,#99f2c8);
+margin:0;
+padding:0;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
 }
 
 .container{
-    background: white;
-    padding: 30px;
-    width: 400px;
-    margin: auto;
-    margin-top: 50px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px gray;
-}
-
-input{
-    padding: 8px;
-    margin: 5px;
-    width: 80px;
-}
-
-button{
-    padding: 10px 15px;
-    background: #007bff;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover{
-    background: #0056b3;
+width:600px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+text-align:center;
 }
 
 h1{
-    color: #333;
+margin-bottom:5px;
 }
 
-#result{
-    color: green;
+.subtitle{
+color:gray;
+margin-bottom:25px;
+}
+
+.card{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input{
+padding:10px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+button{
+padding:10px;
+border:none;
+background:#2c7be5;
+color:white;
+border-radius:5px;
+cursor:pointer;
+font-size:15px;
+}
+
+button:hover{
+background:#1a5fc4;
+}
+
+table{
+width:100%;
+margin-top:15px;
+border-collapse:collapse;
+}
+
+table th, table td{
+border:1px solid #ccc;
+padding:8px;
+}
+
+.resultPage{
+padding:40px;
+font-family:'Segoe UI';
+}
+
+.iteration{
+background:#f4f4f4;
+padding:15px;
+margin:10px 0;
+border-radius:6px;
+}
+
+.final{
+background:#2c7be5;
+color:white;
+padding:20px;
+font-size:20px;
+border-radius:8px;
+margin-top:20px;
 }
