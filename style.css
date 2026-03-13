@@ -1,86 +1,129 @@
-body{
-font-family: 'Segoe UI', Tahoma, sans-serif;
-background: linear-gradient(135deg,#1f4037,#99f2c8);
+*{
 margin:0;
 padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+background:linear-gradient(135deg,#667eea,#764ba2,#ff758c);
+background-size:300% 300%;
+animation:gradientMove 8s infinite alternate;
+}
+
+@keyframes gradientMove{
+0%{background-position:left}
+100%{background-position:right}
 }
 
 .container{
-width:600px;
-background:white;
-padding:30px;
-border-radius:10px;
+width:650px;
+padding:35px;
+border-radius:15px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(10px);
 box-shadow:0 10px 25px rgba(0,0,0,0.3);
+color:white;
 text-align:center;
 }
 
 h1{
-margin-bottom:5px;
+margin-bottom:8px;
+font-size:30px;
 }
 
 .subtitle{
-color:gray;
-margin-bottom:25px;
+margin-bottom:20px;
+opacity:0.9;
 }
 
 .card{
 display:flex;
 flex-direction:column;
-gap:10px;
+gap:12px;
 }
 
 input{
 padding:10px;
-border-radius:5px;
-border:1px solid #ccc;
+border-radius:8px;
+border:none;
+outline:none;
+font-size:15px;
 }
 
 button{
 padding:10px;
 border:none;
-background:#2c7be5;
-color:white;
-border-radius:5px;
+border-radius:8px;
+font-size:16px;
 cursor:pointer;
-font-size:15px;
+background:#ffcc70;
+color:black;
+font-weight:bold;
+transition:0.3s;
 }
 
 button:hover{
-background:#1a5fc4;
+background:#ffd98f;
+transform:scale(1.05);
 }
 
 table{
-width:100%;
 margin-top:15px;
+width:100%;
 border-collapse:collapse;
+background:white;
+color:black;
+border-radius:10px;
+overflow:hidden;
 }
 
-table th, table td{
-border:1px solid #ccc;
+th{
+background:#667eea;
+color:white;
+padding:10px;
+}
+
+td{
 padding:8px;
+border-bottom:1px solid #ddd;
+}
+
+td input{
+width:90%;
 }
 
 .resultPage{
+background:#f4f6fb;
 padding:40px;
 font-family:'Segoe UI';
 }
 
+.resultPage h1{
+color:#333;
+margin-bottom:20px;
+}
+
 .iteration{
-background:#f4f4f4;
+background:white;
 padding:15px;
-margin:10px 0;
+margin-bottom:15px;
+border-left:6px solid #667eea;
 border-radius:6px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
 .final{
-background:#2c7be5;
-color:white;
+margin-top:25px;
 padding:20px;
-font-size:20px;
-border-radius:8px;
-margin-top:20px;
+background:linear-gradient(90deg,#ff758c,#ff7eb3);
+color:white;
+font-size:22px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
 }
